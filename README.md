@@ -8,7 +8,7 @@ The community website for [The Sensemaking Scenius](https://kpaxle.mmm.page/scen
 
 The original website was built by Kristen on [mmm.page](https://mmm.page). In our [Feb 12, 2026 workshop](https://github.com/sensemaking-scenius/website-ressource/issues), the community agreed to rebuild it as an open-source project so that anyone can contribute via pull requests.
 
-This repo is that rebuild.
+This repo is that rebuild. Alexandre downloaded the original HTML and used Claude to reconstruct clean CSS/HTML — that's the `raw_ressources/` (original export) and `site/` (clean reconstruction) directories. Jon then structured it for GitHub Pages deployment.
 
 ## Structure
 
@@ -18,11 +18,14 @@ site/
   about.html           # Mission, principles, backstory
   styles.css           # All styles
   assets/images/       # GIFs, PNGs, decorations
+raw_ressources/        # Original mmm.page HTML export (reference only)
 .github/workflows/
   deploy.yml           # Auto-deploys site/ to GitHub Pages on push
 ```
 
 Plain HTML/CSS — no build step required. Edit the files, push, and GitHub Pages deploys automatically.
+
+**Hosting:** Currently on GitHub Pages (free for public repos). [Netlify's open-source program](https://www.netlify.com/legal/open-source-policy/) is an alternative if we need more features.
 
 ## Contributing
 
@@ -51,14 +54,15 @@ Migrate the existing mmm.page site into a community-editable, open-source format
 
 ### V2 — Brand Upgrade
 
-Apply the Scenius brand identity and integrate content feeds.
+Apply the Scenius brand identity and integrate content feeds. Preserve the storytelling narrative flow while giving it a cohesive visual identity.
 
 - [ ] [Apply Scenius brand (Spencer's design)](https://github.com/sensemaking-scenius/website-ressource/issues/3)
 - [ ] [Integrate Paragraph blog](https://github.com/sensemaking-scenius/website-ressource/issues/4)
+- [ ] Easter eggs and personality (raccoons!)
 
 ### V3 — Subpages as Needed
 
-Add pages for specific community needs as they arise.
+Each member can pilot their own subpage linked from the main page — they can look different and be their own thing ("multi-perspectival").
 
 - [ ] [Professional subpage for funders/grants](https://github.com/sensemaking-scenius/website-ressource/issues/5)
 - [ ] [Project subpages](https://github.com/sensemaking-scenius/website-ressource/issues/6)
@@ -67,6 +71,20 @@ Add pages for specific community needs as they arise.
 ## Domain
 
 The target domain is **scenius.space** (currently pointing at a separate Quartz site). Once V1 is polished, the domain will be moved to point at this GitHub Pages deployment.
+
+## Design Inspiration
+
+Sites we referenced during the workshop:
+
+- [metagov.org](https://metagov.org/) — clean, multiple perspectives on the same org
+- [mosaic-labs.org](https://mosaic-labs.org/) — clean and simple
+- [oatly.com](https://www.oatly.com/en-us) — playful brand storytelling
+- [panic.com](https://panic.com/) — personality-driven
+- [duolingo.com](https://www.duolingo.com/) — fun, character-driven
+- [cardsagainsthumanity.com](https://www.cardsagainsthumanity.com/) — irreverent
+- [dirt.fyi](https://dirt.fyi/) — indie publication aesthetic
+- [100r.co](https://100r.co/site/home.html) — minimal, handcrafted
+- [maggieappleton.com](https://maggieappleton.com/) — digital garden / knowledge-oriented
 
 ## License
 
