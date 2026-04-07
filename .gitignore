@@ -9,6 +9,9 @@ serve_local.sh
 raw_ressources/
 original/
 
+# Workshop vibecoded landing page (recovered from Netlify)
+vibecoded-landing/
+
 # Unused images (not referenced in index.html)
 site/assets/images/1pv4agz.png
 site/assets/images/9d3arw.png
